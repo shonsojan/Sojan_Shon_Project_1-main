@@ -17,8 +17,8 @@
         display: grid;
         grid-template-columns: repeat(4, 85px);
         grid-column-gap: 16px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
 }
 
 article {
@@ -28,4 +28,47 @@ article {
 img {
     margin-top: 20px;
     margin-bottom: 30px;
+ padding-right: 20px;
+}
+
+img:last-of-type {
+ padding-right: 0;
+}
+h2 {
+ font-family: 'Roboto Condensed', sans-serif;
+ font-family: 'Rubik', sans-serif;
+ font-size: 38px;
+ line-height: 45px;
+ letter-spacing: -1px;
+ margin-bottom: 20px;
+ text-shadow: 1px 1px 0 rgb(80, 227, 80);
+ font-weight: 900;
+}
+
+p {
+ font-family: 'Outfit', sans-serif;
+ line-height: 28px;
+ margin-bottom: 20px;
+}
+
+h2 + p::first-letter {
+ color: white;
+ background-color: black;
+ border-radius: 5px;
+ box-shadow: 3px 3px 0 rgb(80, 227, 80);
+ font-size: 32px;
+ padding: 14px 6px;
+ margin-right: 8px;
+ float: left;
+}
+
+p::first-letter {
+ color: white;
+ background-color: black;
+ border-radius: 5px;
+ box-shadow: 3px 3px 0 rgb(255, 59, 10);
+ font-size: 32px;
+ padding: 14px 6px;
+ margin-right: 8px;
+ float: left;
 }
